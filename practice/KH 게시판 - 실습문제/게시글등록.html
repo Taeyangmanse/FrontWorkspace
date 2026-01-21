@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 등록</title>
+</head>
+
+<body>
+    <h3>게시글 등록</h3>
+    <p>
+        제목, 내용은 등록 시 반드시 값을 받도록 하소, 값을 전송할 서버의 주소는 insert, 전송 방식은 post로 설정한다. <br>
+        제목과 내용, 첨부 파일은 서버로 전송 시 title, content, upload 라는 이름으로 전송한다.
+    </p>
+
+    <form action="insert" method="post">
+        <fieldset>
+            <legend>게시글 등록</legend>
+            <fieldset>
+                <legend>제목</legend>
+                <input type="text" name="title" id="title" size="110px">
+            </fieldset>
+            <fieldset>
+                <legend>내용</legend>
+                <textarea name="content" id="content" cols="100" rows="5px"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>첨부파일</legend>
+                <input type="file" name="upload" id="upload" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="등록하기">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
